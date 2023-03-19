@@ -1,0 +1,953 @@
+/*Paleta de color*/
+
+.color1 {color: #000000;}
+.color2 {color: #252528;}
+.color3 {color: #4c4c51;}
+.color4 {color: #7a7981;}
+.color5 {color: #afacb7;}
+.color6 {color: #79E5CB;}
+.color7 {color: #e3fffa;}
+.color8 {color: #FFADA1;}
+.color9 {color: #FFE3E0;}
+
+/* 1rem = 10px */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+}
+
+/* Hack */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Estilos generales */
+.contenido-banner {
+  background-color: rgb( 0 0 0 / 50% );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-banner {
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: 'Lovers Quarrel', cursive;
+  color: #000000;
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: 9.6rem;
+  }
+}
+
+h2 {
+  font-family: 'Lovers Quarrel', cursive;
+}
+
+h3 {
+  font-family: 'Cookie', cursive;
+  font-size: 3rem;
+}
+@media (min-width: 770px) {
+  h3 {
+    font-size: 4rem;
+  }
+}
+
+h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+}
+@media (min-width: 770px) {
+  h4 {
+    font-size: 7rem;
+  }
+}
+
+p, span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+a li, a button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+.nav-link {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #252528;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+.seccion-titulo {
+  font-size: 5.5rem;
+  padding: 1.5rem 0;
+}
+@media (min-width: 480px) {
+  .seccion-titulo {
+    font-size: 8.5rem;
+  }
+}
+
+.seccion-descripcion {
+  font-size: 2.2rem;
+}
+
+.button {
+  width: 30rem;
+  background-color: #79E5CB;
+  color: black;
+  border: 0.1rem solid #79E5CB;
+  border-radius: 0.5rem;
+  padding: 1.2rem 0 0.8rem 0;
+}
+@media (min-width: 480px) {
+  .button {
+    width: 20rem;
+  }
+}
+
+.button:hover {
+  background-color: #e3fffa;
+  border: 0.1rem solid #79E5CB;
+}
+
+.btn-info {
+  font-size: 1.7rem;
+  margin: 2rem;
+}
+
+.button-redondo {
+  border-radius: 5rem;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Barra de navegacion */
+.navbar {
+  padding: 3.2rem 3.2rem 0 3.2rem;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+}
+
+.nav-link:hover {
+  color: #000000;
+  background-color: #79E5CB;
+  border-radius: 0.5rem;
+}
+
+.dropdown-menu {
+  min-width: 7rem !important;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.dropdown-item:hover {
+  background-color: #e3fffa;
+}
+
+/* Seccion Hero */
+.hero-portada {
+  background-image: linear-gradient(to bottom, #f5f6f7 0%, white 100% );
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+}
+
+.hero-centrar {
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  align-items: center;
+  height: auto;
+}
+
+.hero-principal {
+  padding: 4.8rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+}
+
+/* Typewriter */
+
+.Typewriter__wrapper, .Typewriter__cursor {
+  color: #FFADA1;
+  font-size: 2rem; 
+  font-weight: 400;
+}
+@media (min-width: 480px) {
+  .Typewriter__wrapper, .Typewriter__cursor {
+    font-size: 3rem; 
+  }
+}
+
+/* Sobre mi */
+
+.sobre-mi {
+  height: 80rem;
+  padding: 4.5rem;
+}
+
+.sobre-mi .seccion-titulo {
+  font-size: 5rem;
+}
+
+@media (min-width: 480px) {
+  .sobre-mi {
+    height: 55rem;
+    padding: 1rem;
+  }
+
+  .sobre-mi .seccion-titulo {
+    font-size: 8.5rem;
+  }
+}
+
+.seccion-texto {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.sobre-mi .contenedor {
+  max-width: 60rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+/* Experiencia */
+.hero-inferior-imagen {
+  padding-top: 10rem;
+}
+
+.badge-rosa {
+  background-color: #FFADA1;
+  color: white;
+  border-radius: 0.5rem;
+  padding-top: 0.8rem;
+}
+
+.experiencia {
+  padding: 0 4rem 10rem 4rem;
+}
+
+.experiencia .columna {
+  padding: 2rem;
+  border: 0.2rem solid #afacb7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #4c4c51;
+}
+
+.experiencia i {
+  font-size: 4rem;
+  color: black;
+  background-color: #79E5CB;
+  padding: 0.8rem 1.9rem;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  margin: 1rem 0;
+}
+
+.badges-contenedor {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.badge {
+  margin: 0.5rem;
+}
+
+/* Educación y proyectos */
+.img-edu-pro {
+  background-image: url(../imagenes/banners/edu-pro.jpg); /* Foto de <a href="https://unsplash.com/de/@fredmarriage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">freddie marriage</a> en <a href="https://unsplash.com/es/fotos/vSchPA-YA_A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Educación */
+.edu-contenedor {
+  display: flex;
+  padding: 10rem 4rem 5rem 4rem;
+}
+
+.escuela {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 70rem;
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .escuela {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.img-educacion {
+  width: 22rem;
+  height: 25rem;
+  margin: 0.5rem auto;
+}
+@media (min-width: 480px) {
+  .img-educacion {
+    margin: 2rem 2rem 2rem 0;
+  }
+}
+
+.escuela h3 {
+  font-size: 2.8rem;
+}
+@media (min-width: 480px) {
+  .escuela h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 770px) {
+  .escuela h3 {
+    font-size: 3.5rem;
+  }
+}
+
+.edu-texto {
+  padding-top: 2.5rem;
+}
+
+.detalles {
+  font-size: 1.5rem;
+}
+
+.edu-texto a {
+  color: black;
+  text-decoration: none;
+}
+
+.edu-texto a:hover {
+  color: #79E5CB;
+}
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 5rem 4rem 10rem 4rem;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay .p-proyecto {
+  color: #FFADA1;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.1;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: #FFADA1;
+  font-size: 6rem;
+  margin: 1rem;
+}
+
+/* Habilidades */
+.img-habilidad {
+  background-image: url(../imagenes/banners/habilidades.jpg); /* Foto de <a href="https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fotis Fotopoulos</a> en <a href="https://unsplash.com/es/fotos/SyvsTmuuZyM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Cursos */
+
+.articulos {
+  min-height: 50rem;
+  padding: 10rem 4rem 5rem 4rem;
+}
+
+.articulos .card {
+  width: 80%;
+  max-width: 60rem;
+  margin: 2rem;
+}
+
+.articulos .card-header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.list-group a {
+  color: black;
+  text-decoration: none;
+}
+
+.list-group a li:hover {
+  color: #FFADA1;
+  text-decoration: none;
+}
+
+/* Tecnologia*/
+
+.tecnologia {
+  padding: 5rem 4rem 10rem 4rem;
+}
+
+.margen {
+  margin-top: 7rem;
+}
+@media (min-width: 480px) {
+  .margen {
+    margin-top: 5rem;
+  }
+}
+
+.contenedor-conoc {
+  padding: 4rem;
+}
+
+
+.tecnologias {
+  max-width: 55rem;
+  padding: 2rem;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.plataformas {
+  display: flex;
+  max-width: 55rem;
+  margin: auto;
+}
+
+.conocimiento img {
+  height: 100%;
+  width: 100%;
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.contenido-conoc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detalles-conoc p {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.barra-progreso {
+  background: #afacb7;
+  width: 30rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+@media (min-width: 480px) {
+  .barra-progreso {
+    width: 50rem;
+  }
+}
+
+.barra-progreso div {
+  margin-left: 0;
+  height: 1rem;
+  border-radius: 0.5rem;
+  width: 0%;
+  background: #79E5CB;
+}
+
+.barra-progreso div span {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: #4c4c51;
+  float: right;
+  margin-top: -1.5rem;
+  margin-right: -2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid #79E5CB;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.python {
+  animation: python 1s linear forwards;
+}
+@keyframes python {
+  100% { 
+    width: 70%;
+  }
+}
+
+.c {
+  animation: c 1s linear forwards;
+}
+@keyframes c {
+  100% { 
+    width: 50%;
+  }
+}
+
+.java {
+  animation: java 1s linear forwards;
+}
+@keyframes java {
+  100% { 
+    width: 30%;
+  }
+}
+
+.javascript {
+  animation: javascript 1s linear forwards;
+}
+@keyframes javascript {
+  100% { 
+    width: 35%;
+  }
+}
+
+.assembler {
+  animation: assembler 1s linear forwards;
+}
+@keyframes assembler {
+  100% { 
+    width: 35%;
+  }
+}
+
+.mysql {
+  animation: mysql 1s linear forwards;
+}
+@keyframes mysql {
+  100% { 
+    width: 70%;
+  }
+}
+
+.oracle {
+  animation: oracle 1s linear forwards;
+}
+@keyframes oracle {
+  100% { 
+    width: 50%;
+  }
+}
+
+/* Curies Cummunity */
+
+.contenido-banner-curies {
+  background-color: rgb( 0 0 0 / 65% );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 8rem;
+}
+@media (min-width: 920px) {
+  .contenido-banner-curies {
+    background-color: rgb( 0 0 0 / 30% );
+    color: black;
+  }
+
+  .contenido-banner-curies h2 {
+    color: black;
+  }
+
+  .cuadro-blanco {
+    background-color: rgb( 255 255 255 / 95% );
+    width: 70rem;
+    height: 55rem;
+    margin-left: 15%;
+    padding: 0 6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.img-curies {
+  background-image: url(../imagenes/banners/mujeres.jpg);/*<a href="https://www.freepik.es/foto-gratis/vista-posterior-grupo-diversas-amigas-caminando-juntas_2999306.htm#page=3&query=mujeres&position=23&from_view=search&track=sph">Imagen de rawpixel.com</a> en Freepik*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80rem;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .img-curies {
+    height: 70rem;
+  }
+}
+
+.img-logo {
+  width: 15rem;
+  height: 15rem;
+}
+.rounded-circle {
+  border: 0.2rem solid white;
+}
+
+.texto-rosa {
+  color: #FFE3E0;
+  font-weight: 400;
+  padding-top: 3rem;
+}
+@media (min-width: 480px) {
+  .texto-rosa {
+    padding: 3rem 8rem 0 8rem;
+  }
+}
+@media (min-width: 920px) {
+  .texto-rosa {
+    color: #FFADA1;
+  }
+}
+
+/* Testimonios */
+
+.testimonios {
+  padding: 10rem 4rem 10rem 4rem;
+}
+
+.testimonios .carousel {
+  max-width: 80rem;
+}
+
+.carousel-item {
+  height: 50rem;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 15rem;
+  width: 15rem;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-info .cliente {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.testimonio-info .cargo {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #FFADA1;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 110rem;
+  min-height: 20rem;
+  padding: 2rem;
+}
+
+.contacto .rectangulo {
+  margin-top: -8rem;
+  background-color: #79E5CB;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.4rem 0.1rem white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  font-size: 2.2rem;
+  margin: auto;
+  padding: 1rem;
+}
+@media (min-width: 480px) {
+  .contacto .descripcion {
+    padding: 0 3rem;
+  }
+}
+
+.contacto button {
+  color: #000000;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 0.2rem solid white;
+  padding: 2rem 3.2rem;
+  margin: 2rem auto;
+  border-radius: 10rem;
+  transition: all 0.2s ease-in-out;
+  width: 25rem;
+}
+@media (min-width: 480px) {
+  .contacto button {
+    padding: 2rem 4rem;
+    width: auto;
+  }
+}
+
+.contacto button:hover {
+  background-color: #e3fffa;
+  color: #4c4c51;
+  border: 0.2rem solid #000000;
+}
+
+.contacto button i {
+  color: #000000;
+  font-size: 2.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: #4c4c51;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 50rem;
+}
+
+.footer-logo {
+  height: 8rem;
+  width: 8rem;
+  margin: 2.5rem;
+}
+
+.contenedor-logo {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.footer-texto {
+  font-size: 3.5rem;
+  font-weight: 300;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.iconos-redes-sociales a {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  margin: 1rem;
+  border: 0.2rem solid #79E5CB;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: #79E5CB;
+  font-size: 2.8rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #79E5CB;
+  border: 0.2rem solid #e3fffa;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: #000000;
+}
+
+.derechos-de-autor {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #FFE3E0;
+  padding: 2rem;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 1.8rem;
+  }
+
+  .overlay i {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .testimonio-texto {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 60rem;
+  }
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="Irene López">
+  <meta name="description" content="Portafolio de desarrollo web de Irene López">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Titulo -->
+  <title>Irene López | Mi portafolio de proyectos</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="imagenes/logos/logo.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Normalize -->
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- CSS -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Josefin+Sans:wght@200;300;400;600&family=Lovers+Quarrel&family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>  
+  <div class="hero-portada">
+    <!-- Barra de navegacion -->
+    
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/logos/logo.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CV
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1XfINjVolnwFx7Nu_feXFySP0olzpV4hP/view?usp=sharing" target="_blank">En español</a></li>
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1ANOt0OY31LWAUhW3qbG1FKTgZQ-zwaWk/view?usp=sharing" target="_blank">En inglés</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch hero-centrar">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+          <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/fotos/foto.jpg" alt="Foto de Irene López">
+          <h1>Hola, soy Irene López</h1>
+
+        <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+    </section>
+  </div>
+
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="text-center seccion-titulo">¡Conoce más sobre mí!</h2>
+
+      <p class="seccion-texto"> Soy Ingeniera en Sistemas Computacionales, me apasiona programar en Python y desarrollar sitios web con HTML y CSS. 
+      <br> En mi tiempo libre me gusta leer y aprender sobre nuevas tecnologías para mantenerme siempre actualizada en el área de STEAM, pero no solo eso, 
+      también me gusta aprender nuevas cosas que no estén relacionadas con mi carrera, para mí el conocimiento siempre es bienvenido.
+      <br> Además, siempre trato de compartir lo que aprendo con los demás para que más personas se apasionen cómo yo con el mundo de STEAM. 
+      </p>
+    </div>
+  </section>
+
+  <!--Imagen animacion-->
+  <div class="hero align-items-stretch hero-inferior">
+    <img class="hero-inferior-imagen img-fluid" src="imagenes/lap-animada.gif" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+  </div>
+
+  <!-- Experiencia -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+
+        <!-- Desarrollo Web -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <h3 class="experiencia-titulo">Desarrollo Web</h3>
+          <p>Construyo sitios web responsivos, modernos y minimalistas con tecnologías actuales y demandadas por industira de la programación.</p>
+          <div class="badges-contenedor">
+            <span class="badge badge-rosa">HTML</span>
+            <span class="badge badge-rosa">CSS</span>
+            <span class="badge badge-rosa">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Enseñanza -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-pen"></i>
+          <h3 class="experiencia-titulo">Enseñanza</h3>
+          <p>Me gusta compartir mi conocimiento dando cursos básicos para inspirar a más mujeres a que se interesen por carreras en STEM.</p>
+          <div class="badges-contenedor">
+            <span class="badge badge-rosa">Enseñar</span>
+            <span class="badge badge-rosa">Cursos</span>
+            <span class="badge badge-rosa">STEAM</span>
+          </div>
+        </div>
+
+        <!-- Estudiante -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-book"></i>
+          <h3 class="experiencia-titulo">Estudiante</h3>
+          <p>Soy Ingeniera en Sistemas Computacionales, actualmente estoy estudiando diferentes cursos y bootcamps de desarrollo web.</p>
+          <div class="badges-contenedor">
+            <span class="badge badge-rosa">TC PRO</span>
+            <span class="badge badge-rosa">Google Cloud</span>
+            <span class="badge badge-rosa">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educación y Proyectos -->
+  <section class="img-edu-pro">
+    <div class="contenido-banner">
+      <h4 class="text-center contenedor-banner">Educación y Proyectos</h4>
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section class="edu-contenedor seccion-clara">
+    <h2 class="text-center seccion-titulo texto-negro">Educación</h2>
+    <p class="text-center seccion-descripcion">Estas son las escuelas en las que he estudiado.</p>
+
+    <div class="container row">
+      <div class="col-lg-12 col-xl-6 escuela">
+        <div>
+          <img class="img-educacion" src="imagenes/escuelas/escom.png" alt="Foto de ESCOM">
+        </div>
+        <div class="edu-texto">
+          <a href="https://www.escom.ipn.mx/" target="_blank" rel="noopener noreferrer">
+            <h3>IPN - Escuela Superior de Cómputo</h3>
+          </a>
+          <p class="seccion-descripcion">Ingeniería en Sistemas Computacionales</p>
+          <p class="detalles">Ago 2017 - Ene 2023 <br> GPA 84/100</p>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-xl-6 escuela">
+        <div>
+          <img class="img-educacion" src="imagenes/escuelas/cecytem.jpg" alt="Foto de CECyTEM">
+        </div>
+        <div class="edu-texto">
+          <a href="https://cecytem.edomex.gob.mx/" target="_blank" rel="noopener noreferrer">
+            <h3>Colegio de Estudios Científicos y Tecnológicos del Estado de México</h3>
+          </a>
+          <p class="seccion-descripcion">Técnico en Soporte y Mantenimiento de Equipo de Cómputo</p>
+          <p class="detalles">Ago 2014 - Jul 2017 <br> GPA 95/100</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 class="text-center seccion-titulo texto-negro">Mis proyectos recientes</h2>
+    <p class="text-center seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</p>
+
+    <!-- Galeria de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- Proyecto Mariposa Sagrada -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyectos/mariposa.jpg" alt="Proyecto Mariposa Sagrada">
+            <div class="overlay">
+              <p class="p-proyecto">Mariposa Sagrada</p>
+              <a href="https://github.com/IreneLopezM/Mariposa-Sagrada-Historieta-animada-interactiva-enfocada-a-la-Mariposa-Monarca.git" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto Sistema de acceso -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyectos/circuito.jpg" alt="Proyecto Sistema de acceso">
+            <div class="overlay">
+              <p class="p-proyecto">Sistema de acceso</p>
+              <a href="https://github.com/IreneLopezM/Password-access-system-implemented-in-Arduino.git" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto Carrito de compras -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyectos/carrito.jpg" alt="Proyecto Carrito de compras">
+            <div class="overlay">
+              <p class="p-proyecto">Carrito de compras</p>
+              <a href="https://github.com/IreneLopezM/Online-store-developed-in-Python.git" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto Clonación Google -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyectos/google.jpg" alt="Proyecto Clonación Google">
+            <div class="overlay">
+              <p class="p-proyecto">Clonación Google</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/IreneLopezM/clonacion_google" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://clonacion-google1.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto ACHIEVE IT! -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyectos/achieve.jpg" alt="Proyecto ACHIEVE IT!">
+            <div class="overlay">
+              <p class="p-proyecto">ACHIEVE IT!</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/IreneLopezM/Achieve-It.git" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://achieve-it.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyectos/proyecto6.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p class="p-proyecto">Proyecto 6</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/IreneLopezM" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="button btn-info">
+        Ver más proyectos
+        <i class="bi bi-caret-right-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Habilidades  -->
+  <section class="img-habilidad">
+    <div class="contenido-banner">
+      <h4 class="text-center contenedor-banner">Habilidades</h4>
+    </div>
+  </section>
+
+  <!-- Cursos y certificaciones -->
+  <section class="articulos justify-content-start">
+    <h2 class="text-center seccion-titulo texto-negro">Cursos y certificaciones.</h2>
+
+    <div class="card">
+      <div class="card-header">
+        Más recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            Tecnolochicas PRO - Fundación Televisa y Microsoft 
+            <i class="bi bi-link-45deg"></i>
+          </li>
+        </a>
+
+        <a href="https://coursera.org/share/f18c6dc6f744867f617e57eee7d88162" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            Architecting with Google Compute Engine - Coursera 
+            <i class="bi bi-link-45deg"></i>
+          </li>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1MLQt1FHOo2DZMo6Mq4SfL4CUq8-Z2NDM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            PYTHON DESDE CERO - Curies Community
+            <i class="bi bi-link-45deg"></i>
+          </li>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1ruXiDbW8ff778FlClm08K_m1rucsVpzS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            Curso de Inglés - CELEX ESCOM
+            <i class="bi bi-link-45deg"></i>
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <a href="http://www.linkedin.com/in/irene-lopez-mares" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="button btn-info">
+        Ver más
+        <i class="bi bi-caret-right-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Tecnologia -->
+  <section class="seccion-clara tecnologia">
+    <h2 class="text-center seccion-titulo">Conocimientos</h2>
+    <p class="text-center seccion-descripcion">Estas son las tecnologías y lenguajes de programación que he aprendido...</p>
+    
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-6 contenedor-conoc">
+        <h3 class="text-center">Lenguajes de Programación</h3>
+
+        <div class="contenido-conoc">
+          <div class="detalles-conoc">
+            <p>Python</p>
+            <div class="barra-progreso">
+              <div class="python"><span>70%</span></div>
+            </div>
+
+            <p>C/C++</p>
+            <div class="barra-progreso">
+              <div class="c"><span>50%</span></div>
+            </div>
+
+            <p>Java</p>
+            <div class="barra-progreso">
+              <div class="java"><span>30%</span></div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="barra-progreso">
+              <div class="javascript"><span>35%</span></div>
+            </div>
+
+            <p>Assembler</p>
+            <div class="barra-progreso">
+              <div class="assembler"><span>35%</span></div>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-6 contenedor-conoc">
+        <div>
+          <h3 class="text-center">RBDMS</h3>
+
+          <div class="contenido-conoc">
+            <div class="detalles-conoc">
+              <p>MySQL</p>
+              <div class="barra-progreso">
+                <div class="mysql"><span>70%</span></div>
+              </div>
+  
+              <p>Oracle 11g</p>
+              <div class="barra-progreso">
+                <div class="oracle"><span>50%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="margen text-center">
+          <h3>Tecnologías</h3>
+          <div class="tecnologias">
+            <span class="badge badge-rosa">HTML 5</span>
+            <span class="badge badge-rosa">css 3</span>
+            <span class="badge badge-rosa">PyQt5</span>
+            <span class="badge badge-rosa">Azure</span>
+            <span class="badge badge-rosa">Tomcat Web Server</span>
+            <span class="badge badge-rosa">Lattice Diamond</span>
+            <span class="badge badge-rosa">Microchip Studio</span>
+            <span class="badge badge-rosa">Xilinx Vivado</span>
+            <span class="badge badge-rosa">Quartus</span>
+            <span class="badge badge-rosa">Git</span>
+            <span class="badge badge-rosa">Docker</span>
+            <span class="badge badge-rosa">Ren'Py</span>
+            <span class="badge badge-rosa">OpenToonz</span>
+            <span class="badge badge-rosa">Paint Tool SAI</span>
+            <span class="badge badge-rosa">Google Cloud Platform</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="conocimiento">
+        <h3 class="text-center">Plataformas</h3>
+        <div class="plataformas">
+          <div class="proyecto">
+            <img src="imagenes/logos/windows.png" alt="HTML 5">
+            <div class="overlay">
+              <p class="p-proyecto">Windows</p>
+              <p class="seccion-descripcion">Usuario</p>
+            </div>
+          </div>
+  
+          <div class="proyecto">
+            <img src="imagenes/logos/linux.png" alt="CSS 3">
+            <div class="overlay">
+              <p class="p-proyecto">Linux</p>
+              <p class="seccion-descripcion">Usuario</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voluntariado  -->
+  <section class="img-curies">
+    <div class="contenido-banner-curies">
+      <div class="text-center">
+        <div class="cuadro-blanco">
+          <img class="img-logo rounded-circle" src="imagenes/logos/curies.png" alt="Logo de Curies Cummunity">
+          <h2 class="contenedor-banner seccion-titulo">Curies Cummunity</h2>
+          
+          <p class="seccion-descripcion">Somos mujeres que buscan desafiar el estereotipo del género femenino dentro del contexto STEM (Ciencia, Tecnología, Ingeniería y Matemáticas) a través de diferentes herramientas, con el fin de construir una comunidad de confianza, conocimientos y sueños.</p> 
+          <p class="texto-rosa">Hago voluntariado en esta comunidad como mentora impartiendo cursos de programación.</p>
+
+          <a href="https://www.facebook.com/CCuries" target="_blank">
+            <button class="button btn-info button-redondo texto-negro"  type="button">  
+              Conocer más
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios seccion-clara">
+    <h2 class="text-center seccion-titulo texto-negro">Testimonios</h2>
+    <p class="text-center seccion-descripcion">Estos son algunos testimonios de mis cólegas...</p>
+    
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/fotos/fotodenancy.jpg" alt="Foto de Nancy">
+            <p class="testimonio-texto">Irene López demostró ser una estudiante bastante comprometida con su formación como programadora web. Desarrolló habilidades técnicas en corto tiempo y sin duda volvería a trabajar con ella.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Nancy Salazar</p>
+              <p class="cargo">Instructora en Tecnolochicas PRO.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/fotos/shuarellano.jpeg" alt="Foto de Shu Nashy">
+            <p class="testimonio-texto">Irene se integró perfectamente en nuestro equipo interno y los resultados siempre fueron buenos.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Shu Nashy Arellano</p>
+              <p class="cargo">Compañera en ESCOM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/fotos/aranzamont.jpg" alt="Foto de Aranza">
+            <p class="testimonio-texto">Irene es una persona responsable, creativa y dedicada. La invitaría a trabajar en más de mis proyectos si tuviera la oportunidad.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Aranza Montaño</p>
+              <p class="cargo">Compañera en ESCOM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <h2 class="seccion-titulo texto-negro">¡Hablemos!</h2>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 descripcion">
+            Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+          </div>
+          <div class="col-12 col-md-12 col-lg-3">
+            <a href="mailto:elizabethlmares@gmail.com">
+              <button type="button">  
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pie de pagina (footer) -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+    <img class="footer-logo" src="imagenes/logos/logo-blanco.png" alt="Logo del portafolio">
+    <p class="footer-texto text-center">Si lo puedo imaginar, <br> lo puedo programar {💗}</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://github.com/IreneLopezM" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="http://www.linkedin.com/in/irene-lopez-mares" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="mailto:elizabethlmares@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://wa.me/525512790678" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/ireneelizabeth.lmares/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Irene López (2023) &#169;</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script src="main.js"></script>
+
+</body>
+</html>
