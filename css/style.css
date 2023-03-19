@@ -519,29 +519,6 @@ a li, a button {
   padding: 4rem;
 }
 
-
-.tecnologias {
-  max-width: 55rem;
-  padding: 2rem;
-  margin: auto;
-  font-size: 2rem;
-}
-
-.plataformas {
-  display: flex;
-  max-width: 55rem;
-  margin: auto;
-}
-
-.conocimiento img {
-  height: 100%;
-  width: 100%;
-  padding: 3rem 4rem;
-  border-radius: 1rem;
-  display: block;
-  transition: all 0.2s ease;
-}
-
 .contenido-conoc {
   display: flex;
   align-items: center;
@@ -593,6 +570,44 @@ a li, a button {
   font-weight: 400;
 }
 
+/* Frontend */
+.html {
+  animation: html 1s linear forwards;
+}
+@keyframes html {
+  100% { 
+    width: 70%;
+  }
+}
+
+.css {
+  animation: css 1s linear forwards;
+}
+@keyframes css {
+  100% { 
+    width: 70%;
+  }
+}
+
+.bootstrap {
+  animation: bootstrap 1s linear forwards;
+}
+@keyframes bootstrap {
+  100% { 
+    width: 30%;
+  }
+}
+
+.javascript {
+  animation: javascript 1s linear forwards;
+}
+@keyframes javascript {
+  100% { 
+    width: 30%;
+  }
+}
+
+/* Backend */
 .python {
   animation: python 1s linear forwards;
 }
@@ -620,15 +635,6 @@ a li, a button {
   }
 }
 
-.javascript {
-  animation: javascript 1s linear forwards;
-}
-@keyframes javascript {
-  100% { 
-    width: 35%;
-  }
-}
-
 .assembler {
   animation: assembler 1s linear forwards;
 }
@@ -638,12 +644,22 @@ a li, a button {
   }
 }
 
+.shell {
+  animation: shell 1s linear forwards;
+}
+@keyframes shell {
+  100% { 
+    width: 30%;
+  }
+}
+
+/* Bases de datos */
 .mysql {
   animation: mysql 1s linear forwards;
 }
 @keyframes mysql {
   100% { 
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -652,7 +668,64 @@ a li, a button {
 }
 @keyframes oracle {
   100% { 
+    width: 30%;
+  }
+}
+
+
+/* Cloud */
+.gcp {
+  animation: gcp 1s linear forwards;
+}
+@keyframes gcp {
+  100% { 
     width: 50%;
+  }
+}
+
+.azure {
+  animation: azure 1s linear forwards;
+}
+@keyframes azure {
+  100% { 
+    width: 30%;
+  }
+}
+
+/* Otros */
+.tomcat {
+  animation: tomcat 1s linear forwards;
+}
+@keyframes tomcat {
+  100% { 
+    width: 30%;
+  }
+}
+
+.gns {
+  animation: gns 1s linear forwards;
+}
+@keyframes gns {
+  100% { 
+    width: 20%;
+  }
+}
+
+.docker {
+  animation: docker 1s linear forwards;
+}
+@keyframes docker {
+  100% { 
+    width: 20%;
+  }
+}
+
+.git {
+  animation: git 1s linear forwards;
+}
+@keyframes git {
+  100% { 
+    width: 35%;
   }
 }
 
